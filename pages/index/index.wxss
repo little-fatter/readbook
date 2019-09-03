@@ -1,0 +1,55 @@
+/**index.wxss**/
+.box{
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px
+}
+.boxson{
+  width: 32%;
+  margin-left: 10rpx;
+  position: relative
+}
+image{
+  width: 100px;
+  height: 120px
+}
+.title{
+  display: flex;
+  overflow: hidden;
+  flex-wrap: nowrap;
+  height: 20px;
+  font-size: 12px
+}
+.title:active{
+  flex-wrap: wrap;
+  color: red
+}
+.deleteitem{
+  position: absolute;
+  right: 15rpx;
+  top: 5rpx;
+}
+.deletes{
+  display: flex;
+  justify-content: space-between;
+  margin: 30rpx;
+  opacity: 0.5;
+}
+.tishi{
+  display: flex;
+justify-content: center;
+margin: 50px 0 0 0;
+font-size: 14px
+}
+.help{
+  border: 1px solid black;
+border-radius: 0.5em;
+padding: 1px 6px;
+position: relative;
+top: -8px;
+right: 0;
+font-size: 14px;
+}
+.item_author{
+  color: #afafaf
+}

@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/logs/logs",
+    "pages/index/index",
+    "pages/Search/search",
+    "pages/List/List",
+    "pages/Books/books",
+    "pages/CatsBooks/catsbooks",
+    "pages/Chapters/chapters",
+    "pages/Help/help"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#cb1c36",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#cb1c36",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "书架",
+        "iconPath": "images/book.png",
+        "selectedIconPath": "images/selectbook.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "书城",
+        "iconPath": "images/house.png",
+        "selectedIconPath": "images/selecthouse.png"
+      },
+      {
+        "pagePath": "pages/Search/search",
+        "text": "搜索",
+        "iconPath": "images/search.png",
+        "selectedIconPath": "images/selectsearch.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

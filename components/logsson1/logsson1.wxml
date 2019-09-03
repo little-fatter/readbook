@@ -1,0 +1,15 @@
+<!--components/logsson1/logsson1.wxml-->
+<view>
+  <view class="sex">{{sex}}</view>
+  <view>
+    <view wx:for="{{data1}}" wx:key="{{index}}">
+      <view class="box" data-item="{{item._id}}" data-name="{{item.title}}" wx:if="{{!item.collapse}}" bindtap="intoList">
+        <!-- <icon type="success" class="icons"></icon> -->
+        <view class="icons">
+        <image class="imgs" src="https://statics.zhuishushenqi.com{{item.cover}}"></image>
+        </view>
+        <view class="boxson">{{item.title}}</view>
+      </view>
+    </view>
+  </view>
+</view>

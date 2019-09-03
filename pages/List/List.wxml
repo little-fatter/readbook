@@ -1,0 +1,21 @@
+<!--pages/List/List.wxml-->
+<view class="detailsbox" wx:for="{{lists}}" wx:key="{{item._id}}" bindtap="intobook" data-item="{{item._id}}">
+    <view class="images">
+      <image class="img" src="{{apis}}{{item.cover}}"></image>
+    </view>
+    <view class="details">
+     <view class="detailheader">
+      <view class="titles">
+        {{item.title}}
+      </view>
+      <view class="authors">
+        {{item.author}}
+      </view>
+      </view>
+     <view class="detailbottom">
+      <view class="shortintro">
+        {{item.shortIntro}}
+      </view>
+     </view>
+    </view>
+    </view>

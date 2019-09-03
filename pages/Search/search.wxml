@@ -1,0 +1,44 @@
+<!--pages/Search/search.wxml-->
+<van-search value="{{value}}" placeholder="请输入搜索关键词" shape="round" bind:search="searchbook" bind:cancel="cancels" show-action>
+</van-search>
+<view wx:if="{{flag}}">
+  <view class="headbox">
+    <view>大家都在搜</view>
+    <view bindtap="confusion">换一批</view>
+  </view>
+  <view class="box">
+    <view wx:for="{{iconColor}}" style="background-color:{{item}}" wx:key="{{index}}" bindtap="intobook" data-item="{{newhotword[index].book}}" class="boxson" >{{newhotword[index].word}}</view>
+  </view>
+  <view class="headbox">
+    <view>搜索历史</view>
+    <view bindtap="clearhistory" class="clearhistory">清空</view>
+  </view>
+  <view wx:if="{{history.length>0}}">
+  <view wx:for="{{history}}" wx:key="{{index}}" bindtap="clickhistory" data-item="{{item}}" class="history">{{item}}</view>
+  </view>
+</view>
+<view  wx:else>
+  <view class="detailsbox" wx:for="{{searchbook}}" bindtap="intobook" data-item="{{item._id}}" wx:key="{{item._id}}">
+    <view class="images">
+      <image class="img" src="{{apis}}{{item.cover}}"></image>
+    </view>
+    <view class="details common">
+     <view class="detailheader">
+      <view class="titles">
+        {{item.title}}
+      </view>
+      <view class="authors">
+        {{item.author}}
+      </view>
+      </view>
+     <view class="detailbottom">
+      <view class="shortintro">
+        {{item.shortIntro}}
+      </view>
+      <view class="lately">
+        最近收藏：{{item.latelyFollower}}
+      </view>
+     </view>
+    </view>
+  </view>
+</view>

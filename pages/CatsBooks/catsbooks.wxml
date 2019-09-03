@@ -1,0 +1,39 @@
+<!--pages/CatsBooks/catsbooks.wxml-->
+<view class="box">
+  <view wx:for="{{typelist}}" class="total {{num === index?'choosered':''}}" wx:key="item.id" bindtap="getnewMajor" data-type="{{item.id}}" data-index="{{index}}">{{item.name}}</view>
+</view>
+
+<view class="box" wx:if="{{sex==='male'}}">
+  <view class=" minor {{flag?'choosered':''}}" wx:if="{{minor.female[index].mins.length > 0}}" bindtap="clickall">全部</view>
+  <view class=" minor" wx:for="{{minor.male[index].mins}}" wx:key="{{index}}" bindtap="getminor" data-minor="{{item}}">{{item}}</view>
+</view>
+<view class="box minor" wx:if="{{sex==='female'}}">
+  <view class=" minor {{flag?'choosered':''}}" wx:if="{{minor.female[index].mins.length > 0}}" bindtap="clickall">全部</view>
+  <view class=" minor" wx:for="{{minor.female[index].mins}}" wx:key="{{index}}" bindtap="getminor" data-minor="{{item}}">{{item}}</view>
+</view>
+<view class="box minor" wx:if="{{sex===press}}">
+  <view class=" minor {{flag?'choosered':''}}" wx:if="{{minor.female[index].mins.length > 0}}" bindtap="clickall">全部</view>
+  <view class=" minor" wx:for="{{minor.press[index].mins}}" wx:key="{{index}}" bindtap="getminor" data-minor="{{item}}">{{item}}</view>
+</view>
+<view class="box">
+  <view class="detailsbox" wx:for="{{majorlist}}" wx:key="{{item._id}}" bindtap="intobook" data-item="{{item._id}}">
+    <view class="images">
+      <image class="img" src="{{apis}}{{item.cover}}"></image>
+    </view>
+    <view class="details">
+      <view class="detailheader">
+        <view class="titles">
+          {{item.title}}
+        </view>
+        <view class="authors">
+          {{item.author}}
+        </view>
+      </view>
+      <view class="detailbottom">
+        <view class="shortintro">
+          {{item.shortIntro}}
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

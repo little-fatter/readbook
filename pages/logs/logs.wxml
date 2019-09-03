@@ -1,0 +1,12 @@
+<!--logs.wxml-->
+  <van-tabs title-active-color="red">
+  <van-tab  title="分类">
+  <logsson data="{{datalist.male}}" sex="男生"></logsson>
+  <logsson data="{{datalist.female}}" sex="女生"></logsson>
+  <logsson data="{{datalist.press}}" sex="出版"></logsson>
+  </van-tab>
+  <van-tab  title="排行">
+  <logsson1 data1="{{datalist1.male}}" sex="男生" ></logsson1>
+  <logsson1 data1="{{datalist1.female}}" sex="女生"></logsson1>
+  </van-tab>
+</van-tabs>

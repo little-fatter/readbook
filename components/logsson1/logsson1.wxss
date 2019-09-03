@@ -1,0 +1,24 @@
+/* components/logsson1/logsson1.wxss */
+.box {
+  display: flex;
+  margin: 10px 30px;
+border-bottom: 1px solid #f7f7f7;
+padding-bottom: 10px;
+
+}
+/*图片*/
+.icons {
+  flex: 1;
+}
+/*文本*/
+.boxson {
+  flex: 5
+}
+.sex{
+  margin: 15px;
+  color: #afafaf
+}
+.imgs{
+  width: 50%;
+  height: 100%
+}

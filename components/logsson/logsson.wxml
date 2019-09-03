@@ -1,0 +1,12 @@
+<!--components/logsson/logsson.wxml-->
+<text></text>
+<view>
+  <view class="sex">{{sex}}</view>
+  <view class="box">
+    <view class="boxson" wx:for="{{data}}" wx:key="index" 
+    bindtap="intoCatsBooks" data-index="{{index}}" data-sex="{{sex}}" data-major="{{item.name}}">
+      <view class="item_name">{{item.name}}</view>
+      <view class="bookcount">{{item.bookCount}}本</view>
+    </view>
+  </view>
+</view>

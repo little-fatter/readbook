@@ -1,0 +1,8 @@
+.van-tabs--line .van-tabs__wrap{
+  background-color: #f7f7f7;
+  height: 35px!important;
+}
+.van-tabs__line{
+left: 30px!important;
+width: 20px!important
+}

@@ -1,0 +1,12 @@
+<!--pages/Chapters/chapters.wxml-->
+<import src="../../images/wxParse/wxParse.wxml"/>
+
+<view class="title">{{chapterstitle[index].title}}</view>
+<view class="body">
+<view class="chapters_title">{{chapters.title}}</view>
+<template is="wxParse" data="{{wxParseData:article.nodes}}" />
+</view>
+<view>
+<button bindtap="lessindex" class="lessindex">上一章</button>
+<button bindtap="addindex" class="addindex">下一章</button>
+</view>

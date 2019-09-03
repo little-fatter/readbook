@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<view  class="deletes">
+<view  wx:if="{{Xshow}}" bindtap="cancel"><van-icon  size="30px" name="passed" /></view>
+<view  wx:else bindtap="deletes"><van-icon size="30px" name="edit" /></view>
+<view bindtap="intohelp">
+<text class="help">帮助</text>
+<van-icon size="30px" name="flag-o" />
+</view>
+</view>
+<view wx:if="{{booklist.length === 0}}" class="tishi">主人还没收藏书籍哦，请去书城收藏吧！</view>
+<view wx:else class="box">
+  <view class="boxson" wx:for="{{booklist}}" wx:key="item._id" bindtap="intobook" data-item="item._id">
+  <view class="deleteitem" catchtap="deleteitem" data-id="{{item._id}}" data-index="{{index}}" wx:if="{{Xshow}}"><van-icon size="20px" color="red" name="close" /></view>
+    <view>
+      <image src="{{apis}}{{item.cover}}"></image>
+    </view>
+    <view class="title">{{item.title}}</view>
+    <view class="title" class="item_author">{{item.author}}</view>
+  </view>
+</view>

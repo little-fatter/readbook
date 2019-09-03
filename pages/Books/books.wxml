@@ -1,0 +1,66 @@
+<!--pages/Books/books.wxml-->
+<view class="backview"></view>
+<view class="image">
+  <image class="img" src="{{apis}}{{books.cover}}"></image>
+</view>
+<view>
+  <view class="title">{{books.title}}</view>
+  <view class="title2">{{books.author}}</view>
+    <van-button class="readbutton" type="danger" size="normal" round bindtap="reading" data-item="{{id}}">开始阅读</van-button>
+<view wx:if="{{!flag}}">
+    <van-button  class="addbutton" round size="normal" bindtap="addbookstore" data-item="{{id}}">加入书架</van-button>
+</view>
+    <view wx:else>
+    <van-button  class="addbutton" round size="normal" >已加入</van-button>
+    </view>
+</view>
+<view class="backgrounds">
+<view class="box">
+  <van-rate allow-half readonly size="15"
+  color="#f44" value="{{books.rating.score/2}}" />
+</view>
+<view class="box newchap">
+  <text>更新至 </text>
+  <text class="textbooks"> {{books.lastChapter}}</text>
+</view>
+<view class="tabsbox">
+<van-tabs title-active-color="red" v-model="active" >
+  <van-tab title="详情">
+    <view class="longIntro">{{books.longIntro}}</view>
+    <view class="mulu" >
+      <text>总目录</text>
+      <text>({{books.chaptersCount}}章）</text>
+    </view>
+    <view class="lookdiv">
+      <text>看过这本书的人还在看</text>
+      <text bindtap="changelookbook" class="changelookbook">换一批</text>
+    </view>
+    <view class="tuijian">
+      <view class="tujianitems" wx:for="{{otherbooks}}" wx:key="{{item._id}}">
+        <view class="tuijianimage">
+          <image class="tuijianimg" src="{{apis}}{{item.cover}}"></image>
+        </view>
+        <view class="tuijiantitle">{{item.title}}</view>
+      </view>
+    </view>
+  </van-tab>
+  <van-tab title="评价({{shortReviews.total}})">
+    <view class="box shortreviewsdocs" wx:for="{{shortReviews.docs}}" wx:key="{{item._id}}">
+      <view class="authorhead">
+        <view class="headbox">
+        <image class="authorimg" src="{{apis}}{{item.author.avatar}}"></image>
+        </view>
+      </view>
+      <view class="authorcommen">
+        <view class="nickname">
+          {{item.author.nickname}}
+        </view>
+        <view class="content">
+          {{item.content}}
+        </view>
+      </view>
+    </view>
+  </van-tab>
+</van-tabs>
+</view>
+</view>

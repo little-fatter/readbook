@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "书城",
+  "usingComponents": {
+    "van-tab":"../../lib/vant/tab/index",
+    "van-tabs": "../../lib/vant/tabs/index",
+    "logsson":"../../components/logsson/logsson",
+    "logsson1": "../../components/logsson1/logsson1"
+  },
+  "enablePullDownRefresh": true
+}

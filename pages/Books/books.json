@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "van-tab": "../../lib/vant/tab/index",
+    "van-tabs": "../../lib/vant/tabs/index",
+    "van-button":"../../lib/vant/button/index",
+    "van-rate":"../../lib/vant/rate/index",
+    "van-popup": "../../lib/vant/popup/index"
+  },
+  "navigationBarTitleText": "书籍详情"
+}

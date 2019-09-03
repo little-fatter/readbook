@@ -1,0 +1,52 @@
+/* pages/List/List.wxss */
+.detailsbox{
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin:5px 10px;
+  height: 160px;
+  border-bottom: 1px solid #f7f7f7;
+padding: 5px;
+}
+.details{
+flex: 3;
+display: flex;
+flex-direction: column;
+padding: 10px;
+}
+.detailheader{
+  flex: 1
+}
+.detailbottom{
+  flex: 2;
+  display: flex;
+  flex-direction: column
+}
+.shortintro{
+  flex: 5;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp:4
+}
+.images{
+  flex: 2
+}
+.img {
+  width: 100%;
+  height: 100%
+}
+.authors{
+  margin-top: 5px;
+  margin-bottom: 5px
+}
+.lately{
+  flex: 1
+}
+.box{
+  display: flex;
+  flex-wrap: wrap
+}
+.boxson{
+  margin: 10px
+}

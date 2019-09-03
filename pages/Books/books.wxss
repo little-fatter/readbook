@@ -1,0 +1,140 @@
+/* pages/Books/books.wxss */
+.backview {
+  height: 50px;
+  background-color: #cb1c36
+}
+.image {
+  display: flex;
+  justify-content: center;
+  margin-top: -40px;
+}
+.img {
+  width: 100px;
+  height: 140px;
+}
+.title {
+  text-align: center;
+  margin-top: 10px
+}
+.title2 {
+  text-align: center;
+  margin-top: 10px;
+  color: #afafaf;
+  margin-bottom: 30px
+}
+.readbutton{
+  position: absolute;
+  left: 30px;
+  top: 224px
+}
+.addbutton{
+  position: absolute;
+  left: 190px;
+  top: 224px
+}
+.van-button {
+  height: 35px!important;
+  line-height: 35px!important;
+  width: 100px
+}
+/* .buttondiv{
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  height: 50px;
+   background-color: #f7f7f7
+} */
+/*公共弹性盒子居中样式*/
+.box{
+  display: flex;
+  justify-content: center
+}
+/*简介*/
+.longIntro{
+  padding: 20px;
+font-size: 14px
+}
+.mulu{
+  text-align: center;
+margin: 0 20px;
+background-color: #f7f7f7;
+padding: 3px 0;
+font-size: 14px;
+opacity: 0.8;
+}
+.lookdiv{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 10px 10px 10px;
+font-size: 14px;
+}
+.tuijian{
+  display: flex;
+ margin-right: 10px;
+}
+.tujianitems{
+  flex: 1;
+  margin-left: 10px;
+  margin-bottom: 30px;
+}
+.tuijianimage {
+width: 100%
+}
+.tuijianimg {
+  width: 100%;
+height: 140px;
+}
+.tuijiantitle{
+  text-align: center;
+  font-size: 14px;
+}
+.newchap{
+  margin: 5px 0 10px 0
+}
+.authorhead{
+  flex: 1
+}
+.headbox {
+  width:40px;
+  height: 40px;
+  padding-bottom: 30px;
+  padding: 10px 0 30px 10px;
+}
+.authorimg {
+  width: 100%;
+   border-radius: 50% ;
+   height: 100%
+}
+.authorcommen{
+  flex: 4
+}
+.nickname{
+  margin: 10px;
+  color: red
+}
+.content {
+  margin: 10px;
+  overflow: hidden
+}
+.backgrounds{
+  background-color: #f7f7f7;
+  padding-top: 30px;
+}
+.textbooks{
+   color: #96e5e1
+}
+.newchap{
+  font-size: 14px
+}
+.van-tab__pane--active{
+background-color: white
+}
+.changelookbook{
+  color:red
+}
+.tabsbox{
+  margin: 15px
+}
+.shortreviewsdocs{
+  font-size: 14px
+}

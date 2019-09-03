@@ -1,0 +1,28 @@
+/* components/logsson/logsson.wxss */
+.box{
+  display: flex;
+  width: 102%;
+  flex-wrap: wrap;
+}
+.boxson{
+  width: 33.3%; 
+  text-align:center;
+  box-sizing: border-box;
+  border: 1rpx solid #f7f7f7; 
+  margin: 0 0 -1rpx -1rpx;
+  line-height: 25px;
+  display: flex;
+  flex-direction: column;
+}
+.sex{
+  line-height: 50px;
+  margin-left: 15px;
+  color: #afafaf
+}
+.bookcount{
+   color: #afafaf;
+   font-size: 24rpx;
+}
+.item_name{
+  font-weight: bolder
+}
